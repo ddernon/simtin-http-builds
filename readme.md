@@ -2,15 +2,16 @@
 
 Automatic builds on every push to `master`. Bugs may occur 👀
 
-Archives contain a compressed build + a non-compressed one.
+Archives contain a compressed build (with [UPX](https://upx.github.io/)) + a non-compressed one.
 This is because I know many people get scared when they see AV false positives,
 and the compressed version triggers many, while the non-compressed version seems
 globally well accepted.
-And this way you can also easily make fun of antiviruses that are
+And this way you can also easily submit both and see which antiviruses are
 [nothing more than UPX compression detectors](https://www.virustotal.com/gui/file/99c3ec93eeef5f471cc1379b1f98b0132b782874077e6f2e04f387abc7d4a226/community).
 
-Windows builds should work on Windows 7 (which is outdated, blah blah blah) and up.
-Linux buids use musl and should work on most Linux distros without particular additional setup. At some point I ran it on Ubuntu 18.
+Windows builds should work on Windows 7 (which is outdated, blah blah blah) and up.  
+Linux buids are static builds that use [musl](https://en.wikipedia.org/wiki/Musl) and should work
+on most Linux distributions without particular additional setup. At some point I ran it on Ubuntu 18.
 
 ## Quick start
 
